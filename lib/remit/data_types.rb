@@ -90,11 +90,6 @@ module Remit
     parameter :request_id
   end
 
-  class TransactionStatusResponse < BaseResponse
-    parameter :transaction_id
-    parameter :transaction_status
-  end
-  
   class TransactionPart < Remit::BaseResponse
     parameter :account_id
     parameter :role
@@ -139,7 +134,7 @@ module Remit
   
   
   
-  class TransactionResponse < BaseResponse
+  class TransactionStatusResponse < BaseResponse
     parameter :transaction_id
     parameter :transaction_status
     parameter :status
